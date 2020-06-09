@@ -6,6 +6,7 @@ import (
 	"time"
 )
 
+//Pur whatever request you want..Enjoy with gangaii
 var reqque chan interface{}
 
 const (
@@ -49,7 +50,11 @@ func main() {
 
 func reqprocessor(wg *sync.WaitGroup, req interface{}) {
 
+	//Use type assertion to getthe underlayingtype of interface{}  & process the request as per the businesslogic
+
 	//fmt.Println("\nProcessing : ", req.(string)) //Type asserting as we are aware of the underlying type
+
+	//Processing logic for the request goes here.........
 
 	wg.Done()
 }
